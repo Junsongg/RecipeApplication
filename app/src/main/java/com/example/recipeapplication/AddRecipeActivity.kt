@@ -83,18 +83,27 @@ class AddRecipeActivity : AppCompatActivity() {
                 alert.dismiss()
                 etRecipeName.error = "This field cannot be left empty!"
                 etRecipeName.requestFocus()
+                return@setOnClickListener
             }
 
             if(ingredients.isEmpty()){
                 alert.dismiss()
                 etIngredients.error = "This field cannot be left empty!"
                 etIngredients.requestFocus()
+                return@setOnClickListener
             }
 
             if(instructions.isEmpty()){
                 alert.dismiss()
                 etInstructions.error = "This field cannot be left empty!"
                 etInstructions.requestFocus()
+                return@setOnClickListener
+            }
+
+            if(downloadUrl == ""){
+                alert.dismiss()
+                Toast.makeText(this, "Image not added", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
             }
 
             val recipeId = UUID.randomUUID().toString()

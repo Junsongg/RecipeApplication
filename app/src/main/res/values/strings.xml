@@ -4,9 +4,8 @@
     <string-array name="Category">
         <item>All Recipe</item>
         <item>Breakfast</item>
-        <item>Lunch</item>
-        <item>Dinner</item>
-        <item>Side Dishes</item>
+        <item>Meat</item>
+        <item>Desserts</item>
         <item>Soup</item>
         <item>Vegetarian</item>
         <item>Snacks</item>
