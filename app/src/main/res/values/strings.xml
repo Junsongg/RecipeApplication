@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RecipeApplication</string>
+
+    <string-array name="Category">
+        <item>All Recipe</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Side Dishes</item>
+        <item>Soup</item>
+        <item>Vegetarian</item>
+        <item>Snacks</item>
+    </string-array>
+</resources>
