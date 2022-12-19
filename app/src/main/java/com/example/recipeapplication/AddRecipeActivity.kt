@@ -106,6 +106,13 @@ class AddRecipeActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if(category == "All Recipe"){
+                alert.dismiss()
+                binding.spinner.requestFocus()
+                Toast.makeText(this, "category not choosed", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val recipeId = UUID.randomUUID().toString()
             val userId = mAuth.currentUser!!.uid
             val recipeMap = hashMapOf(
